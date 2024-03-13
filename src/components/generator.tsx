@@ -86,13 +86,13 @@ export default function Generator() {
           >
            Tables
           </Button>
-          <Button
+          {/* <Button
             onClick={() => loadTemplate('htmlentities.md')}
             className="w-full bg-black-700 hover:bg-white-700 focus-visible:ring-gray-950"
             variant="outline"
           >
            HTML Entities
-          </Button>
+          </Button> */}
           
           <Button
             onClick={() => loadTemplate('stats.md')}
