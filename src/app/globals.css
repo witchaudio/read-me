@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0; /* Keeps text color as black; adjust if needed */
+  --background-start-rgb: 255, 255, 255; /* Start of background set to white */
+  --background-end-rgb: 255, 255, 255; /* End of background set to white */
+  --Rubik-Regular: Rubik, monospace;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* Text color for dark mode, set to white */
+    --background-start-rgb: 0, 0, 0; /* Start of background for dark mode */
+    --background-end-rgb: 0, 0, 0; /* End of background for dark mode */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb)); /* Simplified background to a solid color */
+}
+
+.rubik-regular {
+  font-family: var(--Rubik-Regular);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.shadow-glow {
+  position: relative;
+  background: linear-gradient(135deg, #102eb1, #000000, purple);
+}
+
+.shadow-glow::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  background: linear-gradient(135deg, #102eb1, #000000, purple);
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.markdown-preview {
+  /* General text styles */
+  color: white; /* Dark gray text for readability */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: white; /* Slightly darker than normal text for emphasis */
+}
+
+.markdown-preview h1 {
+  font-size: 2em; /* Larger size for main headings */
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+}
+
+.markdown-preview h3 {
+  font-size: 1.25em;
+}
+
+.markdown-preview h4 {
+  font-size: 1em;
+}
+
+.markdown-preview h5 {
+  font-size: 0.875em;
+}
+
+.markdown-preview h6 {
+  font-size: 0.85em;
+  color: #777; /* Lighter color for least important headings */
+}
+
+.markdown-preview p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-preview a {
+  color: #0366d6; /* GitHub-style blue links */
+  text-decoration: none;
+}
+
+.markdown-preview a:hover {
+  text-decoration: underline;
+}
+
+.markdown-preview code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #e83e8c; /* Pink color for code */
+  background-color: #f6f8fa; /* Light gray background */
+  border-radius: 3px;
+}
+
+.markdown-preview pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa; /* Consistent with code blocks */
+  border-radius: 3px;
+}
+
+.markdown-preview blockquote {
+  padding: 0 1em;
+  color: #6a737d; /* Gray color */
+  border-left: 0.25em solid #dfe2e5; /* Vertical line to the left */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 2em; /* Indent lists */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-preview table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown-preview table th,
+.markdown-preview table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5; /* Light gray borders */
+}
+
+.markdown-preview table th {
+  font-weight: 600;
+}
+
+.markdown-preview hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8; /* Light gray horizontal rule */
+  border: 0;
+}
+
+.markdown-preview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: transparent; /* Add background color if needed */
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  padding: 0.5em 1em;
+  border: 1px solid gray; /* Light gray border for readability */
+}
+
+.markdown-preview th {
+  background-color: gray; /* Light gray background for header cells */
+  font-weight: 600;
+  text-align: left;
+}
+
+.markdown-preview tr:nth-child(even) {
+  background-color: gray; /* Zebra stripes for rows */
+}
+
+.markdown-preview tr:hover {
+  background-color: gray; /* Hover effect for table rows */
+}
+
