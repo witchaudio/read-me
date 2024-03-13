@@ -28,7 +28,7 @@ export default function Hero() {
         
         <div className="w-full flex justify-center items-center p-2 rounded-lg shadow-glow">
           <Image
-            src="/ui-image.png"  
+            src="/app-ui.png"  
             alt="Interface Image"
             width={1000}  
             height={500}  
