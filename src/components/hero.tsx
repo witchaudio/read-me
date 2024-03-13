@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="w-full min-h-screen flex justify-center items-center">
       <div className="container flex flex-col items-center px-4 space-y-4 md:space-y-6 md:px-6 max-w-4xl">
         <div className="space-y-2 text-center w-full">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">You Better README Right</h1>
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Cool README</h1>
           <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
             The fastest way to build better, and prettier README files. 🧑🏽‍💻
           </p>
@@ -28,10 +28,10 @@ export default function Hero() {
         
         <div className="w-full flex justify-center items-center p-2 rounded-lg shadow-glow">
           <Image
-            src="/app-ui.png"  
+            src="/ui1.gif"  
             alt="Interface Image"
-            width={1000}  
-            height={500}  
+            width={1400}  
+            height={600}  
             objectFit="cover"  
             className="rounded-lg"  
           />

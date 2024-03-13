@@ -5,15 +5,15 @@ export default function Features() {
   const features = [
     {
       title: "Prevent Mistakes",
-      description: "Select exactly what you need and remove the rest with an easy to use interface. Just click on the sections you want to include and you're good to go.",
+      description: "Select exactly what you need and remove the rest with an easy to use interface. Just click on the styles you want to work with and you're good to go.",
     },
     {
       title: "Cool Themes",
-      description: "Want stats for your project? Want a dark theme? No problem. All you need to do is change the theme in the settings or add your own themes.",
+      description: "Want stats for your project? Want a dark theme? No problem. You can select from a variety of themes and then add your own information.",
     },
     {
       title: "Live Preview",
-      description: "Instantly generate a live preview of your file. Download or share directly to you your repositories. No need to wait for a build to finish."
+      description: "Save some time with an instantly generated live preview of your markdown file. Download or copy directly to your IDE or repositories."
     }
   ];
 
